@@ -24,7 +24,7 @@ def predict(data):
 	# url = 'http://127.0.0.1:5000/genres_pred/predict'
 	
 	# API in Production
-	url = 'https://jbm-genre-prediction.onrender.com/genres_pred/predict'
+	url = 'https://jbm-genrepred-deploy.onrender.com/genres_pred/predict'
 	
 	header = {'Content-type': 'text/plain'}
 	data = data
