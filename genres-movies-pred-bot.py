@@ -74,7 +74,7 @@ def index():
 			d1 = predict(data)
 
 			# Define Message to return
-			msg = 'Genders Predicted: {}'.format(d1)
+			msg = 'Genres Predicted: {}'.format(d1)
 
 			# Send Message
 			send_message(chat_id,msg)
@@ -86,7 +86,7 @@ def index():
 			return Response('OK',status=200)
 	else:
 
-		return '<h1> Gender Movies Prediction Telegram Bot </h1>'
+		return '<h1> Genres Movies Prediction Telegram Bot </h1>'
 
 if __name__ == '__main__':
 	port = os.environ.get('PORT',5000)
