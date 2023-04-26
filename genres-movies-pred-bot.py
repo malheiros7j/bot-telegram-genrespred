@@ -5,7 +5,9 @@ import requests
 from flask import Flask, request, Response
 
 # Constant
-token = '5935282467:AAHC--ZVIL0creRajCNxFfBFUQ92qxE-3e0'
+token = '6216712870:AAFdNG5QZXsUFUog1PAfXKj23dcyXxQaw1s'
+
+# https://api.telegram.org/bot6216712870:AAFdNG5QZXsUFUog1PAfXKj23dcyXxQaw1s/setWebhook?url=https://c902c6fcf97f39.lhr.life
 
 def send_message(chat_id,text):
 	url = 'https://api.telegram.org/bot{}'.format(token)
@@ -85,7 +87,6 @@ def index():
 			send_message(chat_id,'The synopsis must be a string')
 			return Response('OK',status=200)
 	else:
-
 		return '<h1> Genres Movies Prediction Telegram Bot </h1>'
 
 if __name__ == '__main__':
